@@ -61,8 +61,7 @@ let Person={
 
   
     } 
-   
-      } 
+ } 
 
 Person.Age();
 Person.Gender();

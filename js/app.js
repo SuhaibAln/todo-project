@@ -16,21 +16,23 @@ let Person={
   },
 
 
-    Gender:function(){
-    if ( this.userGender=="male"||this.userGender=="m"){
-      this.userGender ="Mr.";
-     }
-     else if ( this.userGender=="female"||this.userGender=="f")
-      this.userGender ="Ms.";
-     else
-     this.userGender="";
+  Gender: function () {
+
+    if (this.userGender == "male" || this.userGender == "m") {
+      this.userGender = "Mr.";
+    }
+    else if (this.userGender == "female" || this.userGender == "f")
+      this.userGender = "Ms.";
+
+    else
+      this.userGender = "";
   },
-    
+   
   
     Greeting:function(){
        
       if(this.userInfo){
-        if(this.userGender!="Mr."||this.userGender!="Ms."&&this.userAge<=0 &&this.userAge==null ){
+        if(this.userGender=="Mr."||this.userGender=="Ms." && this.userAge<=0 &&this.userAge==null){
           alert("Welcome "+this.userGender+" "+this.userName+" Age "+this.userAge+" ");
           
           

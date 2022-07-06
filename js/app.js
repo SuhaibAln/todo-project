@@ -14,21 +14,22 @@ let Person={
       alert("Invalide Age Please Try Agin");
     }
   },
+
+
     Gender:function(){
-    
-    if ( this.userGender=='male'||this.userGender=='m'){
+    if ( this.userGender=="male"||this.userGender=="m"){
       this.userGender ="Mr.";
      }
-     else if( this.userGender=="female" ||this.userGender=="f"){
+     else 
       this.userGender ="Ms.";
-     }
-  
-    },
+     
+  },
+    
   
     Greeting:function(){
        
       if(this.userInfo){
-        if(this.userGender!=null&&this.userGender!="" || this.userAge!=null&&this.userAge!=""){
+        if(this.userGender!="Mr."&&this.userGender!="Ms." || this.userAge<=0 &&this.userAge==null){
           alert("Welcome "+this.userGender+" "+this.userName+" Age "+this.userAge+" ");
           
           
